@@ -31,12 +31,18 @@
 <!--
     caption : 테이블의 제목, 리더기에서 읽었을 경우 '~에 대한 ㅁㅁ표입니다'
     summary : 디테일한 속성을 이야기 해줌, 눈에는 보이지 않으나 리더기가 읽음 -> 필수 사항 아님
+
     colgroup : 테이블 아이템, 즉 열의 넒이에 대한 디자인값을 넣을 때 사용
                구성요소로는 빈태그 형식의 col을 사용
                col의 속석으로는 style="" width="" 등을 사용하여 디자인을 조절할 수 있음
+
     colspan : 숫자만큼 오른쪽 옆에 셀과 합침 *합친 같은 행의 옆에 셀은 지워야함
     rowspan : 상하로 열을 합칠 때 *합친 밑에 열의 셍을 지워야함
               단, thead와 tbody를 합칠 수 없음 -> tbody안에서만 합쳐야함
+
+
+
+
 -->
 
 
@@ -56,15 +62,16 @@
 
     <thead>
         <tr>
-            <td>번호</td>
-            <td colspan="2">작성자</td>
-            <td>작성일</td>
+            <th scope="col" >번호</th>
+            <th scope="col" >제목</th>
+            <th scope="col" >작성자</th>
+            <th scope="col" >작성일</th>
         </tr>
         </thead>
 
         <tfoot>
         <tr>
-            <td>foot</td>
+            <th scope="row">foot</th>
             <td>foot</td>
             <td>foot</td>
             <td>foot</td>
@@ -73,12 +80,13 @@
 
         <tbody>
         <tr>
-            <td rowspan="2">item</td>
+            <th scope="row">item</th>
             <td>item</td>
             <td>item</td>
             <td>item</td>
         </tr>
         <tr>
+            <th scope="row">item</th>
             <td>item</td>
             <td>item</td>
             <td>item</td>
