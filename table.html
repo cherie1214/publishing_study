@@ -40,10 +40,20 @@
     rowspan : 상하로 열을 합칠 때 *합친 밑에 열의 셍을 지워야함
               단, thead와 tbody를 합칠 수 없음 -> tbody안에서만 합쳐야함
 
-
+    th scope="col" : 셀에 커서를 올렸을 때, 위에 제목을 읽어줌
+    th scope="row" : 셀에 커서를 올렸을 때, 왼쪽 제목을 읽어줌
 
 
 -->
+
+
+<!-- 셀렉트 -->
+<select>
+    <option>010</option>
+    <option>010</option>
+    <option>010</option>
+</select>
+
 
 
 
@@ -62,12 +72,20 @@
 
     <thead>
         <tr>
+            <th scope="colgroup" colspan="2">번호</th>
+            <th scope="colgroup" colspan="2">작성자</th>
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
             <th scope="col" >번호</th>
             <th scope="col" >제목</th>
             <th scope="col" >작성자</th>
             <th scope="col" >작성일</th>
         </tr>
-        </thead>
+    </thead>
+
 
         <tfoot>
         <tr>
