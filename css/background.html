@@ -10,10 +10,14 @@
         width: auto;
         height: 2000px;
         border: 1px #F00 solid;
+        background: #eeedf2 url(../html/images/Koala.jpg) no-repeat center fixed;
+        /*background-color: #eeedf2;
         background-image: url(../html/images/Koala.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: fixed;*/
+        -webkit-background-size: contain;
+        background-size: contain;
     }
 
 
@@ -38,9 +42,16 @@ background-position-x / background-position-y : 한 쪽만 설정
 
 background-attachment :
                     - fixed : 스크롤을 내려도 사진이 고정되어 있음
+                    - local : 픽스 풀기
 
 css3
+    -webkit-background-size -> 크롬, 사파리
+    -moz-background-size -> 파이어폭스
+    -o-background-size -> 오페라
+    -ms-background-size -> 익스플로러
 background-size
+                    - cover : 가로 기준 비율로 꽉 차게
+                    - contain : 세로 기준 비율로 꽉 차게
 */
 
 </style>
