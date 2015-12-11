@@ -12,7 +12,7 @@ font-family : 글꼴
 font-style : 글씨 형태 ex. 이탤릭->일반
 
 text-align : 좌우 정렬 -> left, center, right, justify (오른쪽 끝을 다 맞춰줌)
-vertical-align : 상하 정렬 (관계가 와 line-height
+vertical-align : 상하 정렬 (inline 요소만  쓸수 있음 ex.span)
 
 white-spacing : nowrap; ->아무리 줄바꿈을 해도 한줄로 나감
 line-height : 줄 간격
@@ -34,8 +34,10 @@ color: 글씨 색상*/
     }
 
     p.test1{outline:1px #F00 solid;
-            text-align: center;}
-    p.test2{outline:1px #F00 solid; }
+            font-size :12px;
+            line-height: o;
+              /*-> 150 ~ 180% 정도가 가독성이 제일 좋음*/
+            }
 
 
 
@@ -43,7 +45,8 @@ color: 글씨 색상*/
 </style>
 
 <body>
-    <p class="test1">text test<p/>
+    <p class="test1">text test text testtext testtext testtext testtext test text test text test text test text test
+        text test text testtext testtext testtext testtext testtext testtext testtext testtext test <p/>
     <p class="text">
         안녕하새오. 텍스트애오. 연습하고 있어오. 어려워오. 잘 부탁드려오.
         안녕하새오. 텍스트애오. 연습하고 있어오. 어려워오. 잘 부탁드려오.
